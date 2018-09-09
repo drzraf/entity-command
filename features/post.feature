@@ -378,7 +378,7 @@ Feature: Manage WordPress posts
     And save STDOUT as {POST_ID}
     And STDERR should be:
       """
-      The 'tax_input' field could not be decode to a valid taxonomy array.
+      Warning: The 'tax_input' field could not be decoded to a valid taxonomy array.
       """
 
   Scenario: Creating/updating custom taxonomies
